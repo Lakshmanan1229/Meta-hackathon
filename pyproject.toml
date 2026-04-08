@@ -29,6 +29,9 @@ inference = [
 [project.scripts]
 server = "email_triage_env.server.app:main"
 
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
 [tool.setuptools]
 include-package-data = true
 packages = ["email_triage_env", "email_triage_env.server"]
